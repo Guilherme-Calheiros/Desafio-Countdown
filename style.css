@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color: #ffffff;
+    --purple-color: #6C63FF;
+    --black-color: #4D4C59;
+    --light-gray-color: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+body {
+    font-family: "Poppins" , sans-serif;
+    height: 100vh;
+    color: var(--text-color);
+    font-size: 14px;
+    background: url(./assets/images/top-image.svg) no-repeat top/contain, url(./assets/images/bottom-image.svg) no-repeat bottom/contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 1600px;
+}
+
+.container h1{
+    color: var(--purple-color);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3.78px;
+    padding-bottom: 20px;
+}
+
+#timer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.timer-name{
+    color: var(--light-gray-color);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.date-number , .double-point{
+    color: var(--black-color);
+    font-weight: 400;
+    font-size: 72px;
+}
+
+.container button{
+    margin-top: 30px;
+    width: 160px;
+    height: 46px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+}
+
+.container button:hover{
+    cursor: pointer;
+}
