@@ -3,34 +3,40 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Countdown</title>
  </head>
- <body style="background: url(./assets/images/top-image.svg) no-repeat top , url(./assets/images/bottom-image.svg) no-repeat bottom;">
-    <div id="container">
-        <h1>READY TO LAUNCH IN...</h1>
-        <section id="countdown">
-            <div class="timer-countdown">
-                <p class="timer-name">Dias</p>
-                <p class="date number" id="days">00</p>
+ <body>
+    <section>
+        <div class="container">
+            <h1>READY TO LAUNCH IN...</h1>
+            <div id="timer">
+                <div>
+                    <p class="timer-name">Dias</p>
+                    <p class="date-number" id="days">00</p>
+                </div>
+                <p class="double-point">:</p>
+                <div>
+                    <p class="timer-name">Horas</p>
+                    <p class="date-number" id="hours">00</p>
+                </div>
+                <p class="double-point">:</p>
+                <div>
+                    <p class="timer-name">Minutos</p>
+                    <p class="date-number" id="minutes">00</p>
+                </div>
+                <p class="double-point">:</p>
+                <div>
+                    <p class="timer-name">Segundos</p>
+                    <p class="date-number" id="seconds">00</p>
+                </div>
             </div>
-            <div class="timer-countdown">
-                <p class="timer-name">Horas</p>
-                <p class="date number" id="hours">00</p>
-            </div>
-            <div class="timer-countdown">
-                <p class="timer-name">Minutos</p>
-                <p class="date number" id="minutes">00</p>
-            </div>
-            <div class="timer-countdown">
-                <p class="timer-name">Segundos</p>
-                <p class="date number" id="seconds">00</p>
-            </div>
-        </section>
-        <section id="subscribe-section">
             <p>Inscreva-se para saber mais sobre o lançamento</p>
             <button>Inscreva-se</button>
-        </section>
-    </div>
-    <div><img src="assets/images/rocket.svg" alt="Imagem de um foguete"></div>
- </body>
+        </div>
+        <div>
+            <img src="assets/images/rocket.svg" alt="Imagem de um foguete">
+        </div>
+    </section>
+ </body> 
  </html>
