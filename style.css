@@ -66,6 +66,10 @@ section{
     font-size: 72px;
 }
 
+.double-point{
+    align-self: self-end;
+}
+
 .container button{
     margin-top: 30px;
     width: 160px;
@@ -78,4 +82,41 @@ section{
 
 .container button:hover{
     cursor: pointer;
+}
+
+@media (min-width: 1360px) {
+    body {
+      background-size: contain;
+    }
+}
+
+@media (max-width: 1305px) {
+    .rocket {
+      width: 410px;
+    }
+}
+
+@media (max-width: 1110px) {
+    section {
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #timer{
+        justify-content: space-evenly;
+    }
+
+    .date-number, .double-point{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container{
+        width: 50vh;
+    }
+    .rocket{
+        width: 50vh;
+    }
 }
