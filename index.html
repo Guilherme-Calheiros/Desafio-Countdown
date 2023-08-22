@@ -32,12 +32,31 @@
                 </div>
             </div>
             <p>Inscreva-se para saber mais sobre o lançamento</p>
-            <button>Inscreva-se</button>
+            <button id="subscribe">Inscreva-se</button>
         </div>
         <div>
             <img class="rocket" src="assets/images/rocket.svg" alt="Imagem de um foguete">
         </div>
+
+        <dialog>
+            <button id="cancel" type="reset">X</button>
+            <div>
+                <h2>Inscreva-se</h2>
+                <p>E fique por dentro de toda novidade</p>
+                <form action="dialog">
+                    <div>
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email">
+                    </div>
+                </form>
+                <button id="send" type="submit">Enviar</button>
+            </div>
+        </dialog>
+
     </section>
+    
     <script src="script.js"></script>
  </body> 
  </html>

@@ -1,7 +1,19 @@
 let day = document.getElementById('days'); 
 let hour = document.getElementById('hours'); 
 let minute = document.getElementById('minutes'); 
-let second = document.getElementById('seconds'); 
+let second = document.getElementById('seconds');
+
+let modal = document.querySelector('dialog');
+let subscribe = document.getElementById('subscribe');
+let cancel = document.getElementById('cancel');
+
+subscribe.onclick = () => {
+    modal.showModal()
+};
+
+cancel.onclick = () => {
+    modal.close()
+};
 
 const target_date = new Date(2023, 10, 20, 23, 59, 59)
 
