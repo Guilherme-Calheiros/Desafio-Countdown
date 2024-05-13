@@ -15,7 +15,7 @@ cancel.onclick = () => {
     modal.close()
 };
 
-const target_date = new Date(2023, 10, 20, 23, 59, 59)
+const target_date = new Date(2024, 10, 20, 23, 59, 59)
 
 function format_number(number){
     if (number < 10){
